@@ -1,0 +1,60 @@
+  <ion-header>
+    <ion-toolbar>
+      <ion-title [routerLink]="'/home'">
+        Reformas
+      </ion-title>
+      <ion-buttons slot="primary">
+        <ion-button>
+          <ion-icon name="contact"></ion-icon>
+          Perfil
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+        <img class="img-slide" src="../../assets/img/sem-shadow.jpg" />
+
+
+    <h2>Qual comodo deseja reformar?</h2>
+    <ion-list>
+      <ion-item *ngFor="let value of formComodo">
+        <ion-label>{{value.comodo}}</ion-label>
+        <ion-checkbox slot="end" [(ngModel)]="value.isChecked"></ion-checkbox>
+      </ion-item>
+    </ion-list>
+
+    <h2>Qual area?</h2>
+    <ion-list>
+      <ion-item *ngFor="let value of formArea">
+        <ion-label>{{value.area}}</ion-label>
+        <ion-checkbox slot="end" [(ngModel)]="value.isChecked"></ion-checkbox>
+      </ion-item>
+    </ion-list>
+
+    <h2>Necessidades</h2>
+    <ion-list>
+      <ion-item *ngFor="let value of formNecessidade">
+        <ion-label>{{value.necessidade}}</ion-label>
+        <ion-checkbox slot="end" [(ngModel)]="value.isChecked"></ion-checkbox>
+      </ion-item>
+    </ion-list>
+
+    <h2>Dados</h2>
+    <ion-list>
+      <ion-item *ngFor="let value of formInfos">
+        <ion-label position="floating">{{value.info}}</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+    </ion-list>
+
+    <h2>Informações adicionais</h2>
+    <ion-list>
+      <ion-item *ngFor="let value of FormInfoAdicional">
+        <ion-label position="floating">{{value.info}}</ion-label>
+        <ion-textarea></ion-textarea>
+      </ion-item>
+    </ion-list>
+    <ion-button expand="block" class="ion-activatable">Enviar <ion-ripple-effect type="unbounded"></ion-ripple-effect></ion-button>
+
+  </ion-content>
