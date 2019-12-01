@@ -7,6 +7,8 @@ const routes: Routes = [
   { path: 'house-info', loadChildren: './house-info/house-info.module#HouseInfoPageModule' },
   { path: 'ensinar', loadChildren: './ensinar/ensinar.module#EnsinarPageModule' },
   { path: 'aprender', loadChildren: './aprender/aprender.module#AprenderPageModule' },
+  { path: 'cadastro-aluno', loadChildren: './cadastro-aluno/cadastro-aluno.module#CadastroAlunoPageModule' },
+  { path: 'ilap', loadChildren: './ilap/ilap.module#ILapPageModule' },
 
 ];
 

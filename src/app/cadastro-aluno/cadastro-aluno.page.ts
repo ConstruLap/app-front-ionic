@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-ensinar',
-  templateUrl: './ensinar.page.html',
-  styleUrls: ['./ensinar.page.scss'],
+  selector: 'app-cadastro-aluno',
+  templateUrl: './cadastro-aluno.page.html',
+  styleUrls: ['./cadastro-aluno.page.scss'],
 })
-export class EnsinarPage implements OnInit {
+export class CadastroAlunoPage implements OnInit {
 
-  public formEnsinar = [
+  public formAprender = [
     { servico: 'Serviço pedreiro em geral', isChecked: false },
     { servico: 'Serviço pintura em geral', isChecked: false },
     { servico: 'Serviço elétrica em geral', isChecked: false },
@@ -34,7 +34,7 @@ export class EnsinarPage implements OnInit {
   ];
 
   public FormInfoAdicional = [
-    { info: 'disponibilidade:' },
+    { info: 'Onde aplicará seu conhecimento:' },
     { info: 'Como ficou sabendo:' }
 
   ];

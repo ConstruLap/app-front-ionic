@@ -1,0 +1,54 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-title [routerLink]="'/home'">
+        Aprenda
+      </ion-title>
+      <ion-buttons slot="primary">
+        <ion-button>
+          <ion-icon name="contact"></ion-icon>
+          Perfil
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+        <img class="img-slide" src="../../assets/img/aprende-sem-shadow.jpg" />
+  
+  
+    <h2>O que deseja Aprender?</h2>
+    <ion-list>
+      <ion-item *ngFor="let value of formAprender">
+        <ion-label>{{value.servico}}</ion-label>
+        <ion-checkbox slot="end" [(ngModel)]="value.isChecked"></ion-checkbox>
+      </ion-item>
+    </ion-list>
+  
+    <h2>Qual seu nível de conhecimento?</h2>
+    <ion-radio-group allow-empty-selection>
+      <ion-item *ngFor="let value of formConhecimento">
+        <ion-label>{{value.conhecimento}}</ion-label>
+        <ion-radio slot="end" color="primary"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+  
+    <h2>Dados</h2>
+    <ion-list>
+      <ion-item *ngFor="let value of formInfos">
+        <ion-label position="floating">{{value.info}}</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+    </ion-list>
+  
+    <h2>Informações adicionais</h2>
+    <ion-list>
+      <ion-item *ngFor="let value of FormInfoAdicional">
+        <ion-label position="floating">{{value.info}}</ion-label>
+        <ion-textarea></ion-textarea>
+      </ion-item>
+    </ion-list>
+    <ion-button class="ion-activatable" expand="block">
+      Enviar
+      <ion-ripple-effect></ion-ripple-effect></ion-button>
+  
+  </ion-content>
