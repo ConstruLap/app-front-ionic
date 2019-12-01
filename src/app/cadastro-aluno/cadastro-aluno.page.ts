@@ -10,8 +10,8 @@ export class CadastroAlunoPage implements OnInit {
   public formAprender = [
     { servico: 'Serviço pedreiro em geral', isChecked: false },
     { servico: 'Serviço pintura em geral', isChecked: false },
-    { servico: 'Serviço elétrica em geral', isChecked: false },
-    { servico: 'Serviço Hidráulico em geral', isChecked: false }
+    { servico: 'Serviço elétrico em geral', isChecked: false },
+    { servico: 'Serviço hidráulico em geral', isChecked: false }
 
   ];
 

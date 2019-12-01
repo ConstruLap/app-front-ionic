@@ -10,8 +10,8 @@ export class EnsinarPage implements OnInit {
   public formEnsinar = [
     { servico: 'Serviço pedreiro em geral', isChecked: false },
     { servico: 'Serviço pintura em geral', isChecked: false },
-    { servico: 'Serviço elétrica em geral', isChecked: false },
-    { servico: 'Serviço Hidráulico em geral', isChecked: false }
+    { servico: 'Serviço elétrico em geral', isChecked: false },
+    { servico: 'Serviço hidráulico em geral', isChecked: false }
 
   ];
 
@@ -34,7 +34,7 @@ export class EnsinarPage implements OnInit {
   ];
 
   public FormInfoAdicional = [
-    { info: 'disponibilidade:' },
+    { info: 'Disponibilidade:' },
     { info: 'Como ficou sabendo:' }
 
   ];

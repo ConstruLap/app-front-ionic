@@ -17,7 +17,7 @@ export class HouseInfoPage implements OnInit {
   ];
   public formArea = [
     { area: 'Elétrica', isChecked: false },
-    { area: 'hidráulica', isChecked: false },
+    { area: 'Hidráulica', isChecked: false },
     { area: 'Construção', isChecked: false }
   ];
 
